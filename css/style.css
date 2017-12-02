@@ -1,0 +1,119 @@
+header {
+    min-height: 62px;
+    position: relative;
+    font-family: "Exo2Bold";
+}
+/*Верхнее меню*/
+.top_line {
+	background-image: url(../img/bg_top.jpg);
+	font-family: "Exo2Bold";
+}
+.top_line ul {
+	margin: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+	list-style-type: none;
+}
+.top_line a {
+	color: #fff;
+	font-size: 16px;
+	display: block;
+	padding: 0 30px;
+	line-height: 62px;
+}
+.top_line li {
+	float: left;
+}
+.top_line li:hover a {
+	color: #6fa6d6;
+}
+
+body {
+	background-image: url(../img/bg_main.jpg);
+	font-family: "OpenSansRegular";
+}
+
+.info {
+	position: fixed;
+	bottom: 12px;
+	right: 1.5%;
+}
+
+.info a {
+	background-image: url(../img/info.png);
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin-bottom: 7px;
+}
+.watermark {
+	position: fixed;
+	display: block;
+	bottom: 5px;
+	left: 0.2%;
+}
+
+#info {
+	padding: 20px;
+	background-color: #fff;
+	max-width: 600px;
+	margin: auto;
+	position: relative;
+}
+ #info h1 {
+ 	text-align: center;
+ }
+#mainpage h1 {
+	padding: 5px;
+	text-align: center;
+}
+section {
+	font-size: 15px;
+}
+
+
+/*Не отображаются по умолчанию для динамической страницы*/
+.hidden {
+	display: none;
+}
+
+.not-hidden {
+	display: block;
+}
+
+
+
+/*Настройка анимации jquery magnific popup*/
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.35s ease-out;
+  -moz-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.35s ease-out;
+  -moz-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
